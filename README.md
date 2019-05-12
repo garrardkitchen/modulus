@@ -32,23 +32,26 @@ In absense of Jira, story + sub tasks are captured below.
 
 ### mod-2
 
-Intepret spec (and identify incomplete or missing information) - done
+- Intepret spec (and identify incomplete or missing information) - done
  - No exception table (I don't know how important/critical this is, have decided to continue without this info as it's the weekend and no means to get this information)
-Create repo - done
-Create branch (dev/mod-1) - done
+- Create repo - done
+- Create branch (dev/mod-1) - done
 
 ### mod-3
 
-Create solution structure:
- - WebAPI (align status codes to success & failed requests)
- - Logic
- - Tests (xUnit)
-Source data for tests
+- Create solution structure: - done
+  - Web (align status codes to success & failed requests)
+  - Api
+  - Shared
+  - Tests (xUnit)
+- Source data for tests - done
+  - Test data in spec document
+- Obtain and load Modulus Weight Table into object - done
 
 ### mod-4
 
-Create tests for standard check 
-Implement logic for standard check (ignore exceptions that are not 4 or 7)
+- Create tests for standard check 
+- Implement logic for standard check (ignore exceptions that are not 4 or 7)
 
 ### mod-5
 

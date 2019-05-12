@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<AssemblyName>Modulus.api</AssemblyName>
+		<RootNamespace>Modulus.api</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="data" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="data\weight_table.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\modulus.shared\modulus.shared.csproj" />
+	</ItemGroup>
+
+</Project>
