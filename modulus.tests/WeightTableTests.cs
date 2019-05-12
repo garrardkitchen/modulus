@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Modulus.api.Exceptions;
 using Modulus.Shared;
+using Modulus.Shared.Enums;
 using Xunit;
 
 namespace modulus.tests

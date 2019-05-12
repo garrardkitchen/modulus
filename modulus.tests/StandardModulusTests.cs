@@ -1,4 +1,6 @@
 using Modulus.api;
+using Modulus.Shared;
+using Modulus.Shared.Models;
 using Xunit;
 
 namespace modulus.tests

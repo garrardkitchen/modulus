@@ -1,4 +1,5 @@
 using Modulus.Shared;
+using Modulus.Shared.Models;
 
 namespace Modulus.api
 {

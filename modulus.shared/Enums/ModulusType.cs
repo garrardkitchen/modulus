@@ -1,4 +1,4 @@
-﻿namespace Modulus.Shared
+﻿namespace Modulus.Shared.Enums
 {
     public enum ModulusType
     {

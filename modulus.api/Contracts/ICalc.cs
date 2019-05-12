@@ -1,6 +1,7 @@
 using Modulus.Shared;
+using Modulus.Shared.Models;
 
-namespace Modulus.api
+namespace Modulus.api.Contracts
 {
     public interface ICalc
     {

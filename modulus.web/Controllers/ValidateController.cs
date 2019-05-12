@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Modulus.api;
-using Newtonsoft.Json.Serialization;
+using Modulus.Shared.Models;
 
-namespace modulus.web.Controllers
+namespace Modulus.Web.Controllers
 {
     [Route("api/validate")]
     [ApiController]

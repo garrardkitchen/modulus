@@ -1,4 +1,6 @@
-namespace Modulus.Shared
+using Modulus.Shared.Enums;
+
+namespace Modulus.Shared.Models
 {
     public class WeightItem
     {

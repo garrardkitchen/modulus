@@ -1,5 +1,8 @@
 using System;
+using Modulus.api.Contracts;
 using Modulus.Shared;
+using Modulus.Shared.Enums;
+using Modulus.Shared.Models;
 
 namespace Modulus.api
 {

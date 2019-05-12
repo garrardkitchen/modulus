@@ -1,4 +1,4 @@
-namespace Modulus.api
+namespace Modulus.Shared.Models
 {
     public class AccountInfo
     {

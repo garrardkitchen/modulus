@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Modulus.Shared;
+using Modulus.Shared.Models;
 
 namespace Modulus.api
 {
@@ -20,6 +21,7 @@ namespace Modulus.api
             var items = this.WeightTable.FindWeights(this.AccountInfo.SortCode);
             WeightItem firstCheck = items.FirstOrDefault();
             WeightItem secondCheck = items.Count > 1 ? items[1] : null;
+            List<int> listOfExceptions = new List<int> {2, 5, 9, 10, 11, 12, 13, 14};
 
             if (firstCheck != null)
             {
@@ -27,7 +29,7 @@ namespace Modulus.api
 
                 if (factory.Calculate() == 0)
                 {
-                    if (secondCheck == null || new List<int> {2, 5, 9, 10, 11, 12, 13, 14}.Contains(firstCheck.Ex))
+                    if (secondCheck == null || listOfExceptions.Contains(firstCheck.Ex))
                     {
                         return true;
                     }
@@ -39,7 +41,7 @@ namespace Modulus.api
                 }
                 else
                 {
-                    if (new List<int> {2, 5, 9, 10, 11, 12, 13, 14}.Contains(firstCheck.Ex))
+                    if (listOfExceptions.Contains(firstCheck.Ex))
                     {
                         if (secondCheck == null)
                         {
