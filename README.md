@@ -60,11 +60,33 @@ In absense of Jira, story + sub tasks are captured below.
 
 ### mod-6
 
-- Create HTTP API 
-- Create routes 
-- Create success responses
-- Create failure responses
-- Create tests
+- Create HTTP API - done
+- Create routes - done
+- Create success responses - done
+- Create failure responses - done
+- Create tests - postman, todo: unit tests & swagger
+
+- statusCode: 200 (valid)
+
+POST https://localhost:5001/api/validate
+```
+{
+    "sortCode" : "089999",
+    "accountNumber": "66374958"
+}
+```
+
+- statusCode: 404 (invalid)
+
+POST https://localhost:5001/api/validate
+```
+{
+    "sortCode" : "089999",
+    "accountNumber": "66374959"
+}
+```
+
+- statusCode: 400 (other)
 
 ### mod-7 
 
