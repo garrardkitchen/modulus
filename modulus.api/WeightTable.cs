@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using modulus.shared;
+using System.Linq;
+using Modulus.Shared;
 
 namespace Modulus.api
 {
@@ -38,8 +39,7 @@ namespace Modulus.api
                     var startPos = x == 0 ? 0 : (x*5);
                     var col = notationSlice.Substring(startPos, 5);
                     var not = col.Trim();
-                    int num;
-                    int.TryParse(not, out num);
+                    int.TryParse(not, out int num);
                     notation[x] = num;
                 }
 
@@ -59,6 +59,18 @@ namespace Modulus.api
                 
                 Weights.Add(item);
             }
+        }
+
+        public List<WeightItem> FindWeights(string sortCode)
+        {
+            if (this.Weights.Count == 0)
+            {
+                throw new NullReferenceException("The Modulus Weight Table has not been loaded");
+            }
+            
+            var items = this.Weights.Where(x => int.Parse(x.Sort1) <= int.Parse(sortCode) 
+                                                && int.Parse(x.Sort2) >= int.Parse(sortCode)).ToList();
+            return items;
         }
     }
 }

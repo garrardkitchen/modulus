@@ -72,4 +72,14 @@ In absense of Jira, story + sub tasks are captured below.
 - Raise PR
 
 
+### TODOs
+
+- WeightTable is a hack, needs improving
+- Failing tests
+- Create custom Exceptions
+
+### Notes
+
+- Not clear where the Exceptions checks are to be run; e.g. before, after or in place of the existing check. 
+- Test Case Data is confusing, in order for mutliple checks algorithms be used (e.g. Standard Mod 11 then dobule Alternative) the sort and account codes must return those from Modulus Weight table. This is not the case (see No 2, returns mod 10 and not mod 11 algoritm)
 

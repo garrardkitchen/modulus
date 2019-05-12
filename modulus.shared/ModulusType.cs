@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace modulus.shared
+﻿namespace Modulus.Shared
 {
     public enum ModulusType
     {

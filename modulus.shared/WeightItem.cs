@@ -1,4 +1,4 @@
-namespace modulus.shared
+namespace Modulus.Shared
 {
     public class WeightItem
     {

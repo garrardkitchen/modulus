@@ -2,6 +2,8 @@
 
 	<PropertyGroup>
 		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<AssemblyName>Modulus.Shared</AssemblyName>
+		<RootNamespace>Modulus.Shared</RootNamespace>
 	</PropertyGroup>
 
 </Project>
