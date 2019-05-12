@@ -7,6 +7,8 @@ namespace Modulus.api
 {
     public class DoubleAlternativeMod10 : ModulusCalcBase
     {
+        protected int ModulusNumber = 10;
+        
         public DoubleAlternativeMod10(AccountInfo accountInfo, WeightItem weightItem) : base(accountInfo, weightItem)
         {
         }
@@ -36,9 +38,7 @@ namespace Modulus.api
                 num += Char.IsNumber(number) ? int.Parse(number.ToString()) : 0;
             }
             
-            int remainder = num % 10;
-
-            return remainder;
+            return num % ModulusNumber;
         }
     }
 }
