@@ -26,7 +26,7 @@ namespace modulus.web.Controllers
 
             // POST api/values
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] AccountInfo accountInfo)
+        public IActionResult Post([FromBody] AccountInfo accountInfo)
         {
             ModulusProcessor processor = new ModulusProcessor(_wt, accountInfo);
 
@@ -47,6 +47,7 @@ namespace modulus.web.Controllers
             {
                 // 400
                 Console.WriteLine(ex.Message);
+                // I don't know the client so masking actual exception message
                 return BadRequest(new {message = "An error occurred. This has been logged and will be investigated"});
             }
         }

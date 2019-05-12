@@ -104,4 +104,7 @@ POST https://localhost:5001/api/validate
 
 - Not clear where the Exceptions checks are to be run; e.g. before, after or in place of the existing check. 
 - Test Case Data is confusing, in order for mutliple checks algorithms be used (e.g. Standard Mod 11 then dobule Alternative) the sort and account codes must return those from Modulus Weight table. This is not the case (see No 2, returns mod 10 and not mod 11 algoritm)
+- Haven't added logging (or any other observability)
+- I don't know the intended client (public or internal) so redacting  error message bubbling up from HTTP API
+- Think about making POST validate async (the assumption here is that the demand will be high for this endpoint)
 

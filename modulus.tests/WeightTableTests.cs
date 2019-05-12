@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Modulus.api.Exceptions;
 using Modulus.Shared;
 using Xunit;
 
@@ -38,7 +39,7 @@ namespace modulus.tests
         [Fact]
         public void Exception_Thrown_As_Trying_To_Find_Weight_When_Table_Not_Loaded_Test()
         {
-            Assert.Throws<NullReferenceException>(() => _wt.FindWeights("123456"));
+            Assert.Throws<MudulusTableNotLoadedException>(() => _wt.FindWeights("123456"));
         }
         
         [Fact]
