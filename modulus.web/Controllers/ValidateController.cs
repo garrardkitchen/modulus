@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Modulus.api;
+using Modulus.api.Helper;
 using Modulus.Shared.Models;
 
 namespace Modulus.Web.Controllers
@@ -15,7 +16,7 @@ namespace Modulus.Web.Controllers
         {
             if (_wt == null)
             {
-               _wt = new WeightTable();
+               _wt = new WeightTable(new TextFileHelper());
                _wt.LoadFromFile();
             }
         }

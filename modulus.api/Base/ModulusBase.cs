@@ -1,12 +1,11 @@
 using Modulus.api.Contracts;
-using Modulus.Shared;
 using Modulus.Shared.Models;
 
-namespace Modulus.api
+namespace Modulus.api.Base
 {
-    public abstract class ModulusCalcBase : ICalc
+    public abstract class ModulusBase : ICalc
     {
-        public ModulusCalcBase(AccountInfo accountInfo, WeightItem weightItem)
+        public ModulusBase(AccountInfo accountInfo, WeightItem weightItem)
         {
             AccountInfo = accountInfo;
             WeightItem = weightItem;

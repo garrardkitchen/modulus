@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using Modulus.api.Base;
 using Modulus.Shared;
 using Modulus.Shared.Models;
 
 namespace Modulus.api
 {
-    public class DoubleAlternativeMod10 : ModulusCalcBase
+    public class DoubleAlternativeMod10 : ModulusBase
     {
         protected int ModulusNumber = 10;
         

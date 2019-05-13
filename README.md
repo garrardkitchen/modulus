@@ -5,6 +5,7 @@ In absense of Jira, story + sub tasks are captured below.
 
 - .NET Core 2.2
 - xUnit
+- Moq
 - [Modulus weight table](https://protect-eu.mimecast.com/s/YPTGCgLqoIm973QToGfo_?domain=vocalink.com)
 
 ## Domain specific language

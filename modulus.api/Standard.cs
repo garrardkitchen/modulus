@@ -1,9 +1,10 @@
+using Modulus.api.Base;
 using Modulus.Shared;
 using Modulus.Shared.Models;
 
 namespace Modulus.api
 {
-    public class Standard : ModulusCalcBase
+    public class Standard : ModulusBase
     {
         protected int ModulusNumber = 10;
         
