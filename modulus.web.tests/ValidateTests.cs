@@ -37,6 +37,5 @@ namespace modulus.web.tests
             var result = controller.Post(accountInfo);
             Assert.IsType<NotFoundObjectResult>(result);
         }
-
     }
 }

@@ -8,6 +8,14 @@ In absense of Jira, story + sub tasks are captured below.
 - Moq
 - [Modulus weight table](https://protect-eu.mimecast.com/s/YPTGCgLqoIm973QToGfo_?domain=vocalink.com)
 
+## Solution notes for developer
+
+The solutions has been arranged so that an Web API (modulus.web) is accessible via HTTP call.  This acts as a very thin http client.  This calls out to an api (modulus.api) and this is where the main business logic resides.  There are some types (models) that are shared between the projects and these are found in the modulus.shared project.
+
+There are two test projects.  These are modulus.tests and modulus.web.tests.  These projects concentrate their unit tests on modulus.api and modulus.web respectively.
+
+To help with the understanding of the business domain, I have included a DSL section below.
+
 ## Domain specific language
 
 - `Modulus Checking` - is used to check the validity of account numbers for a sorting code
@@ -18,6 +26,7 @@ In absense of Jira, story + sub tasks are captured below.
 - `Exception 4` - If the weight table last column contains a number 4, then the specific logic must be followed
 - `Exception 7` - If the weight table last column contains a number 7, then the specific logic must be followed
 - `Notation` - Term to describe the separation of the sort and account codes
+
 
 ## Story (mod-1):
 
@@ -91,9 +100,7 @@ POST https://localhost:5001/api/validate
 
 ### mod-7 
 
-- Finalise documenation
-- Raise PR
-
+- Finalise documentation
 
 ### TODOs
 
@@ -104,8 +111,13 @@ POST https://localhost:5001/api/validate
 ### Notes
 
 - Not clear where the Exceptions checks are to be run; e.g. before, after or in place of the existing check. 
-- Test Case Data is confusing, in order for mutliple checks algorithms be used (e.g. Standard Mod 11 then dobule Alternative) the sort and account codes must return those from Modulus Weight table. This is not the case (see No 2, returns mod 10 and not mod 11 algoritm)
+- Test Case Data is confusing, in order for mutliple check algorithms be used (e.g. Standard Mod 11 then dobule Alternative) the sort and account codes must return those from Modulus Weight table. This is not the case (see No 2, returns mod 10 and not mod 11 algoritm)
 - Haven't added logging (or any other observability)
-- I don't know the intended client (public or internal) so redacting  error message bubbling up from HTTP API
-- Think about making POST validate async (the assumption here is that the demand will be high for this endpoint)
+- I don't know the intended client (public or internal) so redacting error message bubbling up from HTTP API
+- Will need to make POST validate async (the assumption here is that the demand will be high for this endpoint)
+- Not all the tests worked.  My assumption is that I have misinterpretted the specification.
+- The ModulusProcessor.IsValid() method is a bit smelly and will work on this in the short term to improve for own satisfaction.
+
+
+
 
