@@ -19,7 +19,7 @@ namespace modulus.tests
 
         public WeightTableTests()
         {
-            _wt = new Modulus.api.WeightTable(new TextFileHelper());
+            _wt = new Modulus.api.WeightTable(new TextFile());
         }
 
         [Fact]
@@ -56,7 +56,7 @@ namespace modulus.tests
         [InlineData("100041")]
         public void No_Match_Found(string sortCode)
         {
-            var mock = new Mock<ITextFileHelper>();
+            var mock = new Mock<ITextFile>();
             WeightTable wt = new WeightTable(mock.Object); 
             
             List<WeightItem> weights = new List<WeightItem>
@@ -79,7 +79,7 @@ namespace modulus.tests
         [InlineData("100040")]
         public void Match_Found(string sortCode)
         {
-            var mock = new Mock<ITextFileHelper>();
+            var mock = new Mock<ITextFile>();
             WeightTable wt = new WeightTable(mock.Object); 
             
             List<WeightItem> weights = new List<WeightItem>

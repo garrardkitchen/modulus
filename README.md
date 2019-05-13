@@ -97,9 +97,9 @@ POST https://localhost:5001/api/validate
 
 ### TODOs
 
-- WeightTable is a hack, needs improving
+- WeightTable is a hack, needs improving - done
 - Failing tests
-- Create custom Exceptions
+- Create custom Exceptions - done
 
 ### Notes
 

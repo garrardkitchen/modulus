@@ -3,7 +3,7 @@ using Modulus.Shared.Models;
 
 namespace Modulus.api.Contracts
 {
-    public interface ITextFileHelper
+    public interface ITextFile
     {
         List<WeightItem> GetWeightItems(string absPath);
     }

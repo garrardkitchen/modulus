@@ -16,7 +16,7 @@ namespace Modulus.Web.Controllers
         {
             if (_wt == null)
             {
-               _wt = new WeightTable(new TextFileHelper());
+               _wt = new WeightTable(new TextFile());
                _wt.LoadFromFile();
             }
         }

@@ -8,11 +8,11 @@ namespace Modulus.api
 {
     public class WeightTable
     {
-        public ITextFileHelper Helper { get; }
+        public ITextFile Helper { get; }
 
         public List<WeightItem> Weights { get; private set; }
 
-        public WeightTable(ITextFileHelper helper)
+        public WeightTable(ITextFile helper)
         {
             Helper = helper;
             Weights = new List<WeightItem>();

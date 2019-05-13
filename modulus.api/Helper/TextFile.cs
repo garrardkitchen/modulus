@@ -7,7 +7,7 @@ using Modulus.Shared.Models;
 
 namespace Modulus.api.Helper
 {
-    public class TextFileHelper : ITextFileHelper
+    public class TextFile : ITextFile
     {
         public List<WeightItem> GetWeightItems(string absPath)
         {
