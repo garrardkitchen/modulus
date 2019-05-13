@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Modulus.api.Contracts;
-using Modulus.api.Exceptions;
+using Modulus.Api.Contracts;
+using Modulus.Api.Exceptions;
 using Modulus.Shared.Models;
 
-namespace Modulus.api
+namespace Modulus.Api
 {
     public class WeightTable
     {

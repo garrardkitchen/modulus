@@ -1,5 +1,5 @@
-using Modulus.api;
-using Modulus.api.Helper;
+using Modulus.Api;
+using Modulus.Api.Helper;
 using Modulus.Shared;
 using Modulus.Shared.Models;
 using Xunit;

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Modulus.Shared.Models;
 
-namespace Modulus.api.Contracts
+namespace Modulus.Api.Contracts
 {
     public interface ITextFile
     {

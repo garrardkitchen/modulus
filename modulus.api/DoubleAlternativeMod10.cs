@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Modulus.api.Base;
-using Modulus.Shared;
+using Modulus.Api.Base;
 using Modulus.Shared.Models;
 
-namespace Modulus.api
+namespace Modulus.Api
 {
     public class DoubleAlternativeMod10 : ModulusBase
     {

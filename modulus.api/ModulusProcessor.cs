@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using Modulus.Shared;
 using Modulus.Shared.Models;
 
-namespace Modulus.api
+namespace Modulus.Api
 {
     public class ModulusProcessor
     {

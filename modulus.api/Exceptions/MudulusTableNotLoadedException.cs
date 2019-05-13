@@ -1,6 +1,6 @@
 using System;
 
-namespace Modulus.api.Exceptions
+namespace Modulus.Api.Exceptions
 {
     public class MudulusTableNotLoadedException : Exception
     {

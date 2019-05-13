@@ -1,10 +1,9 @@
 using System;
-using Modulus.api.Contracts;
-using Modulus.Shared;
+using Modulus.Api.Contracts;
 using Modulus.Shared.Enums;
 using Modulus.Shared.Models;
 
-namespace Modulus.api
+namespace Modulus.Api
 {
     public class ModulusFactory : ICalc
     {

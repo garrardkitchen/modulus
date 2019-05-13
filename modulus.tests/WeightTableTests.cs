@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Modulus.api;
-using Modulus.api.Contracts;
-using Modulus.api.Exceptions;
-using Modulus.api.Helper;
+using Modulus.Api;
+using Modulus.Api.Contracts;
+using Modulus.Api.Exceptions;
+using Modulus.Api.Helper;
 using Modulus.Shared;
 using Modulus.Shared.Enums;
 using Modulus.Shared.Models;
@@ -15,11 +15,11 @@ namespace modulus.tests
 {
     public class WeightTableTests : IDisposable
     {
-        private Modulus.api.WeightTable _wt;
+        private WeightTable _wt;
 
         public WeightTableTests()
         {
-            _wt = new Modulus.api.WeightTable(new TextFile());
+            _wt = new WeightTable(new TextFile());
         }
 
         [Fact]

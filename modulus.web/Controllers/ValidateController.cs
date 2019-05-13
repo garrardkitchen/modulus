@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using Modulus.api;
-using Modulus.api.Helper;
+using Modulus.Api;
+using Modulus.Api.Helper;
 using Modulus.Shared.Models;
 
 namespace Modulus.Web.Controllers
@@ -21,7 +21,7 @@ namespace Modulus.Web.Controllers
             }
         }
 
-            // POST api/values
+        // POST api/values
         [HttpPost]
         public IActionResult Post([FromBody] AccountInfo accountInfo)
         {

@@ -65,7 +65,7 @@ In absense of Jira, story + sub tasks are captured below.
 - Create routes - done
 - Create success responses - done
 - Create failure responses - done
-- Create tests - postman, todo: unit tests & swagger
+- Create tests - done
 
 - statusCode: 200 (valid)
 

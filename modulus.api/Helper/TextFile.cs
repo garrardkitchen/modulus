@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Modulus.api.Contracts;
+using Modulus.Api.Contracts;
 using Modulus.Shared.Enums;
 using Modulus.Shared.Models;
 
-namespace Modulus.api.Helper
+namespace Modulus.Api.Helper
 {
     public class TextFile : ITextFile
     {

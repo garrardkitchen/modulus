@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Modulus.Shared.Models;
 
-namespace Modulus.api.Helper
+namespace Modulus.Api.Helper
 {
     public interface ITextFileHelper
     {

@@ -1,7 +1,7 @@
-using Modulus.api.Contracts;
+using Modulus.Api.Contracts;
 using Modulus.Shared.Models;
 
-namespace Modulus.api.Base
+namespace Modulus.Api.Base
 {
     public abstract class ModulusBase : ICalc
     {
